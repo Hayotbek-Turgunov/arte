@@ -1,0 +1,66 @@
+.site-header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.site-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-header-logo-link {
+    display: flex;
+}
+
+.site-header-site-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+}
+
+.site-header-site-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.site-header-auth-btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background-color: #81C96A;
+    border: transparent;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.site-header-auth-btn-bars {
+    display: inline-block;
+    background-color: inherit;
+    border: transparent;
+    cursor: pointer;
+    font-size: 30px;
+    color: #81C96A;
+    display: none;
+
+}
+
+
+@media only screen and (max-width: 930px) {
+
+    .site-header-site-nav,
+    .site-header-auth {
+        display: none;
+    }
+
+    .site-header-auth-btn-bars {
+        display: block;
+        display: flex;
+        font-size: 34px;
+    }
+}
